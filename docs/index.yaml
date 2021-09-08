@@ -8,6 +8,6 @@ entries:
     digest: 8cef18c9a0c5ad25ea4b15252e72e2c4c7a18b84f1331d9868bad8a42075a388
     name: rmq-helm-hello-world
     urls:
-    - https://github.com/sisilianderson/rmq-helm-hello-world/rmq-helm-hello-world-9.9.9.tgz
+    - rmq-helm-hello-world-9.9.9.tgz
     version: 9.9.9
 generated: "2021-09-08T18:13:17.502215636+03:00"
