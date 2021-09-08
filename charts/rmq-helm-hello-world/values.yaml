@@ -1,0 +1,27 @@
+replicaCount: 1
+
+image:
+  repository: registry.hub.docker.com/wtfka
+  imageName: rmq-helm-hello-world
+  tag: latest
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+env:
+  RMQ_DSN: amqp://rabbitmq:5672
