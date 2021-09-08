@@ -3,7 +3,7 @@ import pika
 
 if __name__ == '__main__':
     print(settings.RMQ_SETTINGS['dsn'])
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters(settings.RMQ_SETTINGS['dsn']))
     channel = connection.channel()
 
     channel.queue_declare(queue='hello')
